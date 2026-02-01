@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Life Tracker Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🌱 Life Tracker Dashboard</h1>
+  <p>Track daily habits & progress</p>
+  <button onclick="toggleTheme()">🌙 Toggle Theme</button>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>☀️ Weather Tracker</h2>
+    <select id="weather">
+      <option value="">Select weather</option>
+      <option>Sunny</option>
+      <option>Rainy</option>
+      <option>Cloudy</option>
+      <option>Windy</option>
+    </select>
+    <button onclick="logWeather()">Log</button>
+    <ul id="weatherList"></ul>
+  </div>
+
+  <div class="card">
+    <h2>🏃 Fitness Tracker</h2>
+    <input id="fitnessInput" placeholder="Workout details">
+    <button onclick="logFitness()">Log</button>
+    <ul id="fitnessList"></ul>
+  </div>
+
+  <div class="card">
+    <h2>🍎 Nutrition Tracker</h2>
+    <select id="nutrition">
+      <option value="">Select food</option>
+      <option>Fruits</option>
+      <option>Vegetables</option>
+      <option>Home Food</option>
+      <option>Junk Food</option>
+    </select>
+    <button onclick="logNutrition()">Log</button>
+    <ul id="nutritionList"></ul>
+  </div>
+
+  <div class="card">
+    <h2>📚 Reading Tracker</h2>
+    <input id="readingInput" placeholder="Book name">
+    <button onclick="logReading()">Log</button>
+    <ul id="readingList"></ul>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
