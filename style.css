@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #1e3c72, #6a5acd);
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+header button {
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  color: #333;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  border: none;
+  background: #1e3c72;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #16305a;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* DARK MODE */
+.dark {
+  background: #121212;
+  color: white;
+}
+
+.dark .card {
+  background: #1e1e1e;
+  color: white;
+}
